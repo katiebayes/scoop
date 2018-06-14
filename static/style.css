@@ -1,0 +1,11 @@
+.grid-item {
+  width: 300px;
+  height: 100px;
+  background-size: cover; }
+
+.img1 {
+  background-image: url("ProductImages/Banana_Split.jpg"); }
+
+h1 {
+  color: #EB5A9A; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3MvX2Jhc2Uuc2NzcyIsInNjc3Mvc3R5bGUuc2NzcyIsInNjc3MvX3ZhcmlhYmxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBWTtFQUNaLGNBQWE7RUFDYix1QkFBc0IsRUFDekI7O0FBRUQ7RUFDSSx3REFBdUQsRUFDMUQ7O0FDTEQ7RUFDSSxlQ0hpQixFRElwQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
