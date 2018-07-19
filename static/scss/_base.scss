@@ -1,9 +1,90 @@
-.grid-item {
-    width: 300px;
-    height: 100px;
+html {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+
+header {
+    background-image: url('img/drips.png');
     background-size: cover;
+    background-position: center bottom;
+    height: 100px;
+    padding-top: 15px;
+    background-repeat: no-repeat;
+    @include lg-screen {
+    height: 200px;
+  }
+}
+
+.grid-item {
+    min-height: 180px;
+    background-size: cover;
+    margin-bottom: 15px;
+    background-position: center;
+    @include xlg-screen {
+      min-height: 200px;
+    }
+}
+
+.sm-padding {
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .img1 {
     background-image: url('ProductImages/Banana_Split.jpg');
+}
+
+.logo {
+    display: block;
+    max-width: 150px;
+
+    @include lg-screen {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+}
+
+.hero {
+  background-image: url('ProductImages/Banana_Split.jpg');
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  background-attachment: fixed;
+  @include lg-screen {
+    height: 700px;
+  }
+}
+
+.overlay {
+  background-color: rgba(white, .8);
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.order-categories, .instagram-feed {
+  padding: $section-padding-mobile;
+  @include lg-screen {
+    padding: $section-padding;
+  }
+}
+
+.order-categories {
+  margin-top: $section-padding;
+  .container {
+    border-top: 1px solid #979797;
+    padding-top: $section-padding;
+  }
+}
+
+.order-category {
+  display: block;
+  background-color: $brand-color;
+  height: 300px;
+}
+
+.instagram-feed {
+  background-color: $light;
 }
