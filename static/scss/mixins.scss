@@ -21,3 +21,17 @@
     @content;
   }
 }
+
+@mixin transition($attribute...) {
+  transition-duration: 0.5s;
+  transition-property: $attribute;
+}
+
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
