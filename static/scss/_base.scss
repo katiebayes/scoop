@@ -44,6 +44,41 @@ header {
     }
 }
 
+.section-header {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.walnut-graphic, .bourse-graphic {
+  border: 4px solid $brand-color;
+  flex-basis: 100%;
+  @include lg-screen {
+    min-height: 300px;
+  }
+}
+
+.bourse-graphic {
+  background: url('img/bourse.png') no-repeat center bottom;
+  background-size: cover;
+}
+
+.walnut-graphic {
+  background: url('img/walnut.png') no-repeat center;
+  background-size: cover;
+}
+
+.location-header {
+  background-color: $brand-color;
+  flex-basis: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
 .hero {
   background-image: url('ProductImages/Banana_Split.jpg');
   background-size: cover;
@@ -71,6 +106,10 @@ header {
   }
 }
 
+.locations, .order-categories {
+  padding: $section-padding 0;
+}
+
 .order-categories {
   margin-top: $section-padding;
   .container {
@@ -79,16 +118,30 @@ header {
   }
 }
 
-.order-category {
-  @include transition(background-color);
+.order-category, .location {
   display: block;
-  background-color: $brand-color;
   height: 300px;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   justify-content: center;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  h3 {
+    font-size: 54px;
+    font-weight: 200;
+  }
+}
+
+.order-category {
+  @include transition(background-color);
+  background-color: $brand-color;
+  &:hover {
+    background-color: tint($brand-color, 20%);
+  }
   img {
     height: 40px;
     flex-basis: 100%;
@@ -98,15 +151,6 @@ header {
     @include lg-screen {
       height: 70px;
     } 
-  }
-  &:hover {
-    background-color: tint($brand-color, 20%);
-    text-decoration: none;
-    color: #fff;
-  }
-  h3 {
-    font-size: 54px;
-    font-weight: 200;
   }
 }
 
