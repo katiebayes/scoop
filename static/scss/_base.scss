@@ -184,3 +184,22 @@ header {
 .instagram-feed {
   background-color: $light;
 }
+
+footer {
+  padding-top: 24px;
+  background-color: $brand-color;
+  color: #fff;
+}
+
+.footer-header, .footer-summary {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.footer-hairline {
+  border-bottom: 1px solid #fff;
+  @include lg-screen {
+    max-width: 33.33333%;
+    margin: 0 auto;
+  }
+}
